@@ -1,0 +1,37 @@
+.albumWrapper {
+    width: 250px;
+    box-shadow: 0px 4px 12px rgba(11, 108, 255, 0.3);
+    border-radius: 15px;
+    margin: 0px 30px 30px 0px;
+
+    img.recImg {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .recipeDetails {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 5px 10px 5px;
+
+        a {
+            margin-bottom: 30px;
+
+            p.rTxt {
+                color: #615C5C;
+                font-weight: 600;
+                font-size: 1.1rem;
+                text-align: center;
+                border-bottom: 2px dashed #0B6CFF;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .albumWrapper {
+        margin: 0px 0px 20px 0px;
+    }
+}

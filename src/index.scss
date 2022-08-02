@@ -1,0 +1,266 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 0;
+  color: inherit;
+  margin-bottom: 0 !important;
+}
+
+button.blue {
+  padding: 10px 35px;
+  background-color: #0B6CFF;
+  color: #fff;
+  border: 1px solid #0B6CFF;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+h3 {
+  color: #615C5C;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.mgTop20 {
+  margin-top: 20px;
+}
+
+// Start of Home page css 
+
+main {
+  background: #0B6CFF;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  min-height: 95vh;
+
+  section {
+    background: #fff;
+    width: 70%;
+    border-radius: 9px;
+    padding: 0px 30px 50px 30px;
+
+    input,
+    select {
+      border: 1px solid #0B6CFF;
+      border-radius: 7px;
+      padding: 10px;
+    }
+
+    .searchMeal {
+      margin-top: 30px;
+
+      .inpSearch {
+        margin-top: 50px;
+        background: #FBFBFB;
+        box-shadow: 0px 4px 14px 1px rgba(11, 108, 255, 0.4);
+        border-radius: 15px;
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+
+        input {
+          width: 85%;
+        }
+      }
+
+      .filter {
+        h3 {
+          margin-bottom: 15px;
+        }
+
+        background: #FBFBFB;
+        box-shadow: 0px 4px 14px 1px rgba(11, 108, 255, 0.4);
+        padding: 25px;
+        border-radius: 15px;
+        margin: 40px 0px;
+
+        .flxFilter {
+          display: flex;
+          justify-content: space-between;
+
+          select,
+          input {
+            width: 49%;
+          }
+        }
+      }
+
+      .flexMeals {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+// End of Homepage Css 
+
+
+// Start of Recipe Css 
+.recipeWrapper {
+  padding: 30px;
+  padding-bottom: 200px;
+
+  .flexRecPicIng {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    .leftReci {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        max-width: 450px;
+        border-radius: 10px;
+      }
+    }
+
+    .rightReci {
+      width: 45%;
+
+      .flextags {
+        display: flex;
+        margin-top: 5px;
+
+        span {
+          margin-right: 5px;
+          background: #6596E0;
+          border-radius: 5px;
+          color: #fff;
+          padding: 3px 8px;
+        }
+      }
+    }
+
+  }
+
+  .flxCatrea {
+    margin-top: 30px;
+    display: flex;
+
+    .lftCt {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start
+    }
+  }
+
+  textarea {
+    border: 1px solid #0B6CFF;
+    border-radius: 7px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+button.fav {
+  display: flex;
+  align-items: center;
+}
+
+p.bl {
+  border-bottom: 1px dashed #0B6CFF;
+}
+
+li.instrc {
+  list-style-type: none;
+}
+
+// End of Recipe Css 
+
+
+// Start of Area Css 
+.areaCnt {
+  padding: 40px;
+
+  .flexAreaMeals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  main {
+    section {
+      width: 85%;
+      padding: 0px 20px 30px 20px;
+
+      .searchMeal {
+        .inpSearch {
+          flex-direction: column;
+          padding: 20px;
+          margin-top: 30px;
+
+          input {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+        }
+
+        .filter {
+          padding: 20px;
+
+          .flxFilter {
+            flex-direction: column;
+
+            select,
+            input {
+              width: 100%;
+            }
+
+            input {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .recipeWrapper {
+    padding: 20px;
+    padding-bottom: 200px;
+
+    .flexRecPicIng {
+      flex-direction: column;
+      align-items: center;
+
+      .leftReci,
+      .rightReci {
+        width: 100%;
+      }
+
+      .leftReci {
+        margin-bottom: 30px;
+
+        img {
+          max-width: 280px;
+        }
+      }
+    }
+  }
+}

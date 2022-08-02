@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 13px 7px rgba(11, 108, 255, 0.25);
+    padding: 30px 50px;
+}
+
+p.bdHead {
+    color: #615C5C;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+img.logo {
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    p.bdHead {
+        font-size: 1.1rem;
+    }
+}
