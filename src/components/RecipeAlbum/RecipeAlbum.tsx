@@ -21,7 +21,11 @@ const RecipeAlbum: React.FunctionComponent<RecipeAlbumProps> = ({
       <img className="recImg" src={imageLink} alt="recipe" />
       <div className="recipeDetails">
         <Link to={`/recipe/${id}`}>
-          <p className="rTxt">{recipeName}</p>
+          <p className="rTxt">
+            {recipeName.length > 20
+              ? `${recipeName.slice(0, 20)}...`
+              : recipeName}
+          </p>
         </Link>
         {categoryName && areaName && (
           <>
